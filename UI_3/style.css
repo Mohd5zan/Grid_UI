@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: flex-end;
+    padding: 0px 60px;
+    padding-top: 150px;
+    gap:60px;
+
+}
+#left{
+    height: 100%;
+    width: 48%;
+    /* background-color: salmon; */
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+#left-top h1{
+    font-size: 100px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 100px;
+}
+#left-bottom {
+    /* height: 40%; */
+    width: 100%;
+    padding-bottom: 30px;
+    /* background-color: rgb(241, 241, 28); */
+}
+#color{
+    display: flex;
+    /* background-color: aliceblue; */
+    border: 1px solid black;
+    width: fit-content;
+    padding: 5px 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    gap: 1px;
+}
+#color h5{
+    margin-right: 10px;
+    font-weight: 400;
+}
+#color1{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color:burlywood;
+}
+#color2{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: sienna;
+}
+#left-bottom h2{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+#left-bottom p{
+    width: 70%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #444;
+    line-height: 23px;
+}
+#right{
+    height: 90%;
+    width: 30%;
+    /* background-color: cyan; */
+    margin-right: 30px;
+    margin-bottom: 80px;
+}
+#right-top{
+    height: 30px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+}
+#right-top h4{
+    font-weight: 600;
+    font-size:20px
+}
+#right-top h5{
+    font-size: 15px;
+}
+#right-top i{
+    color: gold ;
+}
+#right img{
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#blackg{
+    height: 150px;
+    width: 150px;
+    color: white;
+    border-radius: 50%;
+    background-color: rgb(28, 28, 58);
+    position: absolute;
+    top: 40%;
+    right: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#blackg h5{
+    font-weight: 600;
+    font-size: 20px;
+}
+#rotated{
+    position: absolute;
+    /* background-color: red; */
+    rotate: -90deg;
+    /* transform-origin: 0 0; */
+    right: 40%;
+    bottom: 30%;
+    font-size: 40px;
+    font-weight: 500;
+}
