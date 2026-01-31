@@ -78,7 +78,7 @@ html,body{
     display: flex;
     overflow-x: auto;
 }
-#text-cont::-webkit-scrollbar{
+#text-cont::-webkit-scrollbar{    
     background-color: transparent;
     height: 5px;
 }
