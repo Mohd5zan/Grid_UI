@@ -124,3 +124,121 @@ html,body{
 #over2 img{
     size: 3vw;
 }
+#scroll{
+    height: 50vh;
+    width: 100%;
+    /* background-color:red; */
+    /* padding: 3vw; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#container{
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+ #container img{
+    height: 85%;
+    width: 15%;
+    margin: 1vw;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: 30% 30%;
+    /* position: absolute; */
+}
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+#alphabet{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    height: 10vh;
+    width:100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#alphabet h5{
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 4px;
+    border-bottom: 2px solid black;
+    margin-right: 1.5vw;
+}
+#alphabet h6{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 4px;
+    padding: 0.5vw 0.7vw;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: all ease 0.2s;
+}
+#alphabet h6:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 2vw;
+    gap: 2vw;
+}
+#page2-1{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1622352560218-cb4a9d064b0e?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#page2-2{
+    height: 100%;
+    width: 45%;
+}
+#page2-2 img{
+    height: 70%;
+    width: 60%;
+}
+#page2-3{
+    height: 30%;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12vw;
+}
+#page2-3 #p1{
+    height: 90%;
+    width: 50%;
+    font-weight: 900;
+}
+#page2-3 #p2{
+    height: 90%;
+    font-weight: 500;
+    text-align: right;
+
+    width: 45%
+}
