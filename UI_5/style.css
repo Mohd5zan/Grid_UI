@@ -28,7 +28,7 @@ html,body{
     height: 12vh;
     width: 100%;
     /* background-color: red; */
-    margin-top: 5vh;
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,6 +46,9 @@ html,body{
     border-right: 2px solid black;
     font-size: 23px;
     font-weight: 600;
+}
+#nav h3{
+    display: none;
 }
 #nav h1{
     display: flex;
@@ -377,4 +380,315 @@ html,body{
 #footer{
     height: 100%;
     width: 100%;
+}
+@media (max-width:600px) {
+    #scroll{
+    height: 20vh;
+    width: 100%;
+    /* background-color:red; */
+    /* padding: 3vw; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+#container{
+    height: 100%;
+    width: 210%;
+    /* background-color: blue; */
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+ #container img{
+    height: 85%;
+    width: 12%;
+    margin: 1vw;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: 30% 30%;
+    /* position: absolute; */
+}
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+#alphabet{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    height: 10vh;
+    width:100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#alphabet h5{
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 4px;
+    border-bottom: 2px solid black;
+    margin-right: 1.5vw;
+}
+#alphabet h6{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 4px;
+    padding: 0.5vw 0.7vw;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: all ease 0.2s;
+}
+#alphabet h6:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+#page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 2vw;
+    gap: 2vw;
+}
+#page2-1{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1622352560218-cb4a9d064b0e?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#page2-2{
+    height: 100%;
+    width: 45%;
+}
+#page2-2 img{
+    height: 70%;
+    width: 60%;
+}
+#page2-3{
+    padding: 1vw;
+    height: 30%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3vw;
+}
+#page2-3 #p1{
+    height: 100%;
+    width: 80%;
+    font-weight: 900;
+}
+#page2-3 #p2{
+    display: inline-block;
+    height: 100%;
+    font-weight: 500;
+    text-align: right;
+    width: 50%;
+}
+#page3{
+    height: 100%;
+    width: 100%;
+    padding:  0.5vw  2vw;
+    /* background-color: blue; */
+
+}
+#page3 #up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
+    font-weight: 600;
+    font-family: m;
+    font-size: 5vh;
+    margin-bottom: 2vh;
+}
+#page3-1{
+    height: 80%;
+    width: 100%;
+    /* background-color: red; */
+}
+#page3-1 .elem{
+    height: 16vh;
+    width: 100%;
+    border-top: 2px solid black;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+}
+.elem:nth-last-child(1){
+    border-bottom: 2px solid black;
+}
+.elem img{
+    position: absolute;
+    height: 15vh;
+    border-radius: 50%;
+    width: 7vw;
+    object-fit: cover;
+    left: 10%;
+    top: 2%;
+    opacity: 0;
+    transition: all ease 0.7s;
+}
+.elem h3{
+    font-size: 1.6vw;
+    width: 6%;
+    font-weight: 500;
+}
+.elem1{
+    /* background-color: red; */
+    width: 50%;
+}
+.elem1 h4{
+    font-size: 3vw;
+    font-weight: 600;
+}
+.elem1 h5{
+    font-size: 1.2vw;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.elem:nth-last-child(1) img{
+    left: 40%;
+}
+.elem:nth-last-child(3) img{
+    left: 40%;
+}
+.elem:hover{
+    background-color: rgb(211, 218, 224);
+}
+.elem:hover img{
+    opacity: 1;
+    left:30%;
+}
+#marque{
+    width: 100%;
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    border-top: 2px solid black ;
+    border-bottom: 2px solid black ;
+    padding: 0.5vw;
+}
+#marque h1{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 3vw;
+    font-weight: 600;
+    -webkit-text-stroke: 0.005px black;
+    color: transparent;
+    font-family: m;
+    letter-spacing: 2px;
+    animation-name: move;
+    animation-duration: 5s;
+    margin-right: 16px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* text-shadow:none; */
+}
+    body{
+        overflow-x: hidden;
+    }
+    #nav{
+    padding: 0 5vw;
+    height: 8vh;
+    margin-top: 20px;
+}
+#nav h2{
+    display: none;
+}
+#nav h3{
+    display: block;
+}
+#nav h1{
+    justify-content: flex-start;
+    width: 40%;
+    font-size: 24px;
+}
+#nav h1::after{
+    display: none;
+}
+#nav h1::before{
+    display: none;
+}
+#center{
+    height: 50%;
+    /* background-color: rebeccapurple; */
+    padding: 5vw;
+    width: 100%;
+}
+#content{
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#overlay{
+    /* background-color: red; */
+    height: 58%;
+    width: 100%;
+    padding: 3vh;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.154);
+    backdrop-filter: blur (2px);
+}
+#over1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 3vh;
+}
+#over2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-top: 2px solid #fff;
+    padding: 1.5vw 0;
+}
+#over1 h1{
+    font-family: m;
+    font-size: 5vw;
+    font-weight: 500;
+}
+#over1 h2{
+    font-size: 3.5vw;
+    padding: 3vw 3.2vw;
+    /* background-color: blue; */
+    border-radius: 50%;
+    border: 1px solid white;
+    border-bottom: 2px solid white;
+}
+#over2 h4{
+    font-size: 3.5vw;
+    font-weight: 500;
+}
+#over2 img{
+    size: 5vw;
+}
 }
